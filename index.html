@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!--start of navigation-->
+    <nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Menu
+            </button>
+            <div class="menu">
+              <a class="menu-item" href="#">Action</a>
+              <a class="menu-item" href="#">Another action</a>
+              <hr class="menu-divider">
+              <a class="menu-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="hstack gap-2" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+    <!--end of navigation-->
+
+  
+
+    <div class="container-fluid bg-primary text-center p-5 text-white">
+        <h1>Welcome to Bootstrap</h1>
+    </div>
+    <!-- start of  carousel -->
+     <div id="carouselStacked" class="carousel slide">
+  <div class="d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">Top controls</h5>
+    <div>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+     <!--  end of carousel -->
+    <div class="container-fluid mt-3">
+        <div class ="row">
+            <div class="col-4 fg-success">
+                <h1>Column one</h1>
+                <p>we love css bootstrap ttttttttttttttttttttttttttttttt</p>
+            </div>
+            <div class="col-4 fg-info">
+                <h1>Column two</h1>
+                <p>i love js python and mmmmmmmmmm</p>
+            </div>
+            <div class="col-4 fg-danger">
+                <h1>Column three</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dolor recusandae libero vitae at dolorum corporis dolores quasi quae consectetur fugiat fuga sequi quo earum ab, natus error aliquid harum!</p>
+            </div>
+        </div>
+    </div>
+    <!--start of card-->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <section class="card" style="max-width: 320px">
+  <img src="static/img/fuliza.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Fuliza</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Get</a>
+  </div>
+</section>
+            </div>
+            <div class="col-4">
+                <section class="card" style="max-width: 320px">
+  <img src="static/img/PochLaiashara.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Pochi La Biashara</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Pay</a>
+  </div>
+</section>
+            </div>
+            <div class="col-4">
+                <section class="card" style="max-width: 320px">
+  <img src="static/img/LipNaM-PESA.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Lipa Na M-PESA</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Pay</a>
+  </div>
+</section>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://cdn.jsdeliver.net/npm/boot"></script>
+</body>
+</html>
